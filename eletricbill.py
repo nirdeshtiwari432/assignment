@@ -6,7 +6,7 @@ elif(units <= 200):
     amount = x * 5
 elif(units >= 200):
     x = units -200
-    amount = units * 10 + 500
+    amount = x * 10 + 500
 
 total = amount 
 print("\nElectricity Bill = " , total)
