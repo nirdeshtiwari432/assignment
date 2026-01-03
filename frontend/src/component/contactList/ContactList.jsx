@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default function ContactList({ contacts, onDelete }) {
   const deleteContact = async (id) => {
-    await axios.delete(`http://localhost:5000/api/contacts/${id}`);
+    await axios.delete(`assignment-eta-indol.vercel.app/api/contacts/${id}`);
     onDelete();
   };
 
