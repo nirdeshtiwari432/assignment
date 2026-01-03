@@ -14,7 +14,7 @@ export default function ContactForm({ onAdd }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("assignment-eta-indol.vercel.app/api/contacts", form);
+    await axios.post("https://assignment-eta-indol.vercel.app/api/contacts", form);
     setForm({ name: "", email: "", phone: "", message: "" });
     onAdd();
   };
