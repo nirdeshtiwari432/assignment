@@ -8,7 +8,7 @@ const contact =  require("./routes/contactRoutes")
 connectDB();
 app.use(cors());
 app.use(express.json({
-  origin: "http://localhost:3000"
+  origin: "https://assignment-m6bo.vercel.app"
 }));
 
 app.use("/api/contacts",contact);
